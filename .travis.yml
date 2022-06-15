@@ -5,17 +5,17 @@ services:
   - docker
 
 before_install:
-  - docker build -t spglab/wyk7 -f Dockerfile.dev2 .
+  - docker build -t krzysztoflitka/lab3 -f Dockerfile.dev2 .
 
 script:
-  - docker run -e CI=true spglab/wyk7 npm run test
+  - docker run -e CI=true krzysztoflitka/lab3 npm run test
 
 deploy:
   provider: elasticbeanstalk
-  region: "us-east-2"
-  app: "docker-test"
-  env: "dockertest-env"
-  bucket_name: "elasticbeanstalk-us-east-2-039699603980"
+  region: "us-east-1"
+  app: "lab3"
+  env: "Lab3-env"
+  bucket_name: "elasticbeanstalk-us-east-1-934635507048"
   bucket_path: "docker-test"
   edge: true
   on:
