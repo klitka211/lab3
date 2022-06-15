@@ -13,8 +13,8 @@ script:
 deploy:
   provider: elasticbeanstalk
   region: "us-east-1"
-  app: "lab3"
-  env: "Lab3-env"
+  app: "lab3-travis"
+  env: "Lab3travis-env"
   bucket_name: "elasticbeanstalk-us-east-1-934635507048"
   bucket_path: "docker-test"
   edge: true
