@@ -16,9 +16,9 @@ deploy:
   app: "Zad2travis"
   env: "Zad2travis-env"
   bucket_name: "elasticbeanstalk-us-east-1-934635507048"
-  bucket_path: "zad2travis"
+  bucket_path: "Zad2travis"
   edge: true
   on:
-    branch: main
+    branch: master
   access_key_id: $AWS_ACCESS_KEY
   secret_access_key: $AWS_SECRET_KEY
