@@ -17,7 +17,7 @@ deploy:
   app: "lab3-travis"
   env: "Lab3travis-env"
   bucket_name: "elasticbeanstalk-us-east-1-934635507048"
-  bucket_path: "lab3"
+  bucket_path: "lab3-travis"
   edge: true
   on:
     branch: master
