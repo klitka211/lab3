@@ -4,7 +4,6 @@ language: generic
 services:
   - docker
 
-
 before_install:
   - docker build -t krzysztoflitka/zadanie2 -f Dockerfile.dev2 .
 
