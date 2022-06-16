@@ -1,0 +1,24 @@
+sudo: required
+language: generic
+
+services:
+  - docker
+
+before_install:
+  - docker build -t krzysztoflitka/lab3 -f Dockerfile.dev2 .
+
+script:
+  - docker run -e CI=true krzysztoflitka/lab3 npm run test
+
+deploy:
+  provider: elasticbeanstalk
+  region: "us-east-1"
+  app: "lab3"
+  env: "Lab3-env"
+  bucket_name: "elasticbeanstalk-us-east-1-934635507048"
+  bucket_path: "lab3"
+  edge: true
+  on:
+    branch: master
+  access_key_id: $AWS_ACCESS_KEY
+  secret_access_key: $AWS_SECRET_KEY
