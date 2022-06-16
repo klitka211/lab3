@@ -1,5 +1,6 @@
 PROGRAMOWANIE FULL-STACK W CHMURACH OBLICZENIOWYCH
 Zadanie 2
+
 CZĘŚĆ OBOWIĄZKOWA
 1. (max. 100%)
 Proszę uruchomić przygotowaną aplikację na platformie AWS, usługa EBS. W tym celu należy
@@ -27,10 +28,13 @@ Działanie aplikacji:
 CZĘŚĆ DODATKOWA
 -------------------------------------------------------------------------------------------
 Do pliku .yml w workflows należało dodac kod widniejący poniżej:
-![image](https://user-images.githubusercontent.com/78439685/174059084-eede6715-aaf2-40d1-964f-eface041886d.png)
+![image](https://user-images.githubusercontent.com/78439685/174076692-cbc2b0ad-a7a0-4b27-b71d-c0eca6c6f6dd.png)
 
 Dzięki niemu po wdrożeniu aplikacji na AWS został wysłany obraz na DockerHub za pomocą GitHub Actions:
 ![image](https://user-images.githubusercontent.com/78439685/174060161-5e9ade8d-ebb8-44c1-858a-885ae9ac30bf.png)
 ![image](https://user-images.githubusercontent.com/78439685/174060236-2213a123-a408-428d-8ecc-317a86fbdc18.png)
 
 Link do repozytorium DockerHub: https://hub.docker.com/r/krzysztoflitka/zadanie2
+
+Za pomocą travisa: poprzez plik .travis.yml:
+
