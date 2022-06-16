@@ -2,7 +2,7 @@ name: Deploy master
 on:
   push:
     branches:
-      - main
+      - master
 
 jobs:
   build:
