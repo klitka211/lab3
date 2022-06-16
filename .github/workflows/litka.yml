@@ -38,5 +38,7 @@ jobs:
           environment_name: Lab3-env
           existing_bucket_name: elasticbeanstalk-us-east-1-934635507048
           version_label: "docker-app-${{ steps.format-time.outputs.replaced }}"
-          region: es-east-1
+          region: us-east-1
           deployment_package: deploy.zip
+          
+          
