@@ -5,18 +5,18 @@ services:
   - docker
 
 before_install:
-  - docker build -t spglab/wyk7 -f Dockerfile.dev2 .
+  - docker build -t krzysztoflitka/zadanie2 -f Dockerfile.dev2 .
 
 script:
-  - docker run -e CI=true spglab/wyk7 npm run test
+  - docker run -e CI=true krzysztoflitka/zadanie2 npm run test
 
 deploy:
   provider: elasticbeanstalk
   region: "us-east-1"
-  app: "Zad2travis"
-  env: "Zad2travis-env"
+  app: "zadanie2"
+  env: "Zadanie2-env-1"
   bucket_name: "elasticbeanstalk-us-east-1-934635507048"
-  bucket_path: "Zad2travis"
+  bucket_path: "zadanie2
   edge: true
   on:
     branch: master
