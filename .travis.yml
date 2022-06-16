@@ -16,7 +16,7 @@ deploy:
   region: "us-east-1"
   app: "lab3-travis"
   env: "Lab3travis-env"
-  bucket_name: "elasticbeanstalk-us-east-1-934635507048"
+  bucket_name: "lab3-travis"
   bucket_path: "lab3-travis"
   edge: true
   on:
