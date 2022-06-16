@@ -11,7 +11,7 @@ konfiguracyjnego, który jest dostępny na moodle w katalogu Zadanie 2 (plik: za
 W sprawozdaniu proszę podać link do repozytorium GitHub oraz link do uruchomionej aplikacji w
 chmurze AWS.
 
-Działąnie GitHub Actions:
+Działanie GitHub Actions:
 ![image](https://user-images.githubusercontent.com/78439685/174057212-c6e4ae98-125d-4d68-a28c-ba2f65c14183.png)
 
 Poprawnie przesłany obraz na AWS:
@@ -36,5 +36,7 @@ Dzięki niemu po wdrożeniu aplikacji na AWS został wysłany obraz na DockerHub
 
 Link do repozytorium DockerHub: https://hub.docker.com/r/krzysztoflitka/zadanie2
 
-Za pomocą travisa: poprzez plik .travis.yml:
+Za pomocą travisa, poprzez plik .travis.yml:
+![image](https://user-images.githubusercontent.com/78439685/174174993-2b9d6670-2581-47fd-bdb1-e01cecb021f1.png)
+
 
